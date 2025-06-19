@@ -23,7 +23,7 @@ const RegisterPage = () => {
         }));
     };
 
-    const handleClick = () =>{
+    const handleClick = () => {
         navigate("/Login")
     }
 
@@ -131,21 +131,12 @@ const RegisterPage = () => {
                 </div>
 
                 <div>
-                    <button onClick={handleClick}  className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-4 rounded-md transition duration-200">
+                    <button onClick={handleClick} className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-4 rounded-md transition duration-200">
                         Create Account
                     </button>
                 </div>
 
-                <button 
-                    onClick={() => navigate('/')}
-                    className="w-full border-2 border-[#6C25FF] text-[#6C25FF] font-medium py-2.5 px-4 rounded-md transition-colors 
-                    hover:bg-[#6C25FF] hover:text-white flex items-center justify-center gap-2 mt-2"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
-                    </svg>
-                    Back to Main
-                </button>
+                
             </div>
         </div>
     );
