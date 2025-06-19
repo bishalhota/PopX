@@ -1,6 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () =>{
+        navigate("/Account")
+    }
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center px-4">
       <div className="h-screen max-w-md w-full bg-white rounded-lg shadow-md p-8">
@@ -32,7 +40,7 @@ const LoginPage = () => {
           />
         </div>
 
-        <button className="w-full bg-[#CBCBCB] hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-md transition duration-200">
+        <button onClick={handleClick} className="w-full bg-[#CBCBCB] hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-md transition duration-200">
           Login
         </button>
       </div>
